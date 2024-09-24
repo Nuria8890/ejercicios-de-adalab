@@ -1,0 +1,19 @@
+1. ¿Por qué los enlaces son verdes y no rojos?
+  Porque el único elemento que tiene color rojo es la etiqueta "a", y el color verde está especificado con etiquetas y clases. Tiene mayor especificidad (atributo > id > clase > etiqueta), por lo que sobreescribe el color anterior.
+
+2. Haz que los enlaces sean rojos.
+  Eliminando este estilo los enlaces serían rojos:
+
+  ul.news li.news__item a.news__item-link {
+    color: green;
+  }
+
+
+3. Rehaz el HTML usando <div> en lugar de <ul> y <li>. ¿Qué pasa?
+  Solo se implementan los estilos de la etiqueta <a> porque se han escrito con las etiquetas <ul> y <li>, y al ya no estar en el html, esos estilos no se tienen en cuenta, como si no existieran.
+
+4. Comenta el CSS que no se puede tocar y reescríbelo usando solo selectores de clase, es decir, sin utilizar selectores de etiqueta.
+  Hecho
+
+5. BONUS: Cambia ahora entre <div> y <ul>/<li>.
+  Los estilos siguen funcionando. ((Ahora entiendo el "arma de doble filo" con los selectores muy específicos. Es una buena práctica escribir los selectores lo más genéricos posible))
