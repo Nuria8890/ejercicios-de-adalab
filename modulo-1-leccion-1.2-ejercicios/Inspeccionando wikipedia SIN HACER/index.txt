@@ -1,0 +1,7 @@
+Entra en Wikipedia.org y
+
+Averigua el peso total de la página principal de Wikipedia.
+
+Averigua cuánto ha tardado en cargar la página.
+
+Averigua cuántas imágenes usa la página principal de Wikipedia
