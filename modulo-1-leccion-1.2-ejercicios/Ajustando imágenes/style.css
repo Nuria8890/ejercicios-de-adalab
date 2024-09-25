@@ -1,0 +1,15 @@
+.div {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Al añadir la propiedad box-sizing: border-box; lo que ocurre es que tanto el borde como el padding se incluyen en el ancho y alto de la imagen. Como si la imagen heredara el tamaño del padding y del borde del div */
+
+.img-tortilla {
+  width: 100px;
+  height: 100px;
+}
