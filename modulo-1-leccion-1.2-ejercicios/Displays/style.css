@@ -1,0 +1,32 @@
+.div {
+  width: 100px;
+  height: 100px;
+}
+
+.div-1 {
+  background-color: red;
+}
+
+.div-2 {
+  background-color: yellow;
+}
+
+.div-3 {
+  background-color: green;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-none {
+  display: none;
+}
