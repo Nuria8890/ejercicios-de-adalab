@@ -1,0 +1,46 @@
+.listado-noticias {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Quitar después */
+  background-color: aqua;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.noticias {
+  width: 50%;
+
+  /* Quitar después */
+  background-color: azure;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 200px;
+}
+/* 
+.noticia-1 {
+  order: 2;
+}
+
+.noticia-2 {
+  order: 3;
+}
+
+.noticia-3 {
+  order: 4;
+}
+
+.noticia-4 {
+  order: 5;
+} */
+
+.noticia-5 {
+  order: -1;
+  width: 100%;
+}
