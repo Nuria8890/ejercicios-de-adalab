@@ -1,0 +1,14 @@
+.caja-contenedora {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row; El eje principal es el X (de izquierda a derecha), y el eje secundario es el Y (de arriba a abajo) */
+
+  /* flex-direction: column; El eje principal es el Y (de arriba a abajo), y el eje secundario es el X (de izquierda a derecha) */
+}
+
+.item {
+  border: 1px solid violet;
+}
