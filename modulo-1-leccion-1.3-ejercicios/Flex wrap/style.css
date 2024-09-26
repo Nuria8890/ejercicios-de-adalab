@@ -1,0 +1,17 @@
+.contenedor {
+  /* Distribución en bloque y se apilan una detrás de la otra */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img {
+  background-color: pink;
+  border: 2px solid violet;
+  width: 200px;
+  height: 100px;
+  /* Para alinear el texto (números) al centro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
