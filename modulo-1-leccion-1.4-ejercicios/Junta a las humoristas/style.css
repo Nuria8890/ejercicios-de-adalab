@@ -1,0 +1,54 @@
+.contenedor {
+  max-width: 1000px;
+  height: 300px;
+  overflow: scroll;
+  margin: 50px;
+  border: #84318d solid;
+}
+figure {
+  border: #e01670 solid;
+  display: inline-block;
+  margin: 20px;
+  background: #e01670;
+}
+figcaption {
+  text-align: center;
+  color: #fff;
+}
+img {
+  object-fit: cover;
+  width: 150px;
+  height: 200px;
+  border: #14d9c4 solid;
+}
+#lina {
+  position: static;
+}
+#eva {
+  position: relative;
+  top: 0px;
+  /* left: -20px; */
+  left: -30px;
+}
+#ana {
+  position: absolute;
+  top: 110px;
+  /* left: 420px; */
+  left: 410px;
+}
+#yolanda {
+  position: fixed;
+  top: 110px;
+  /* left: 600px; */
+  left: 590px;
+}
+#maria {
+  position: sticky;
+  top: 20px;
+  /* left: 740px; */
+  left: 730px;
+}
+.texto {
+  padding: 100px;
+  border: #e01670 solid;
+}
