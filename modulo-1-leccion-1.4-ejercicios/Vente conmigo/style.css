@@ -1,0 +1,16 @@
+.cabecera {
+  background-color: violet;
+  border: 1px solid blue;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.contenedor {
+  background-color: lightblue;
+  /* NO SÉ QUÉ POSICIONAMIENTO LE TENGO QUE DAR 
+  position: relative;
+  position: absolute;
+  position: static;
+  position: sticky;*/
+}
