@@ -1,0 +1,54 @@
+.contenedor {
+  max-width: 1000px;
+  height: 300px;
+  overflow: scroll;
+  border: #84318d solid;
+}
+.texto {
+  padding: 100px;
+  border: #e01670 solid;
+  background: #fff;
+}
+figure {
+  border: #e01670 solid;
+  display: inline-block;
+  margin: 20px;
+  background: #e01670;
+}
+figcaption {
+  text-align: center;
+  color: white;
+}
+img {
+  object-fit: cover;
+  width: 150px;
+  height: 200px;
+  border: #14d9c4 solid;
+}
+#lina {
+  position: static;
+  z-index: 0;
+}
+#eva {
+  position: relative;
+  top: 40px;
+  left: -380px;
+  z-index: 2;
+}
+#ana {
+  position: absolute;
+  top: 160px;
+  left: 70px;
+  z-index: 4;
+}
+#yolanda {
+  position: fixed;
+  top: 140px;
+  left: 50px;
+  z-index: 3;
+}
+#maria {
+  position: sticky;
+  top: 40px;
+  z-index: 1;
+}
