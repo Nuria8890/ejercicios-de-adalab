@@ -8,9 +8,10 @@
 
 .contenedor {
   background-color: lightblue;
-  /* NO SÉ QUÉ POSICIONAMIENTO LE TENGO QUE DAR 
+  /* NO SÉ QUÉ POSICIONAMIENTO LE TENGO QUE DAR */
   position: relative;
-  position: absolute;
-  position: static;
-  position: sticky;*/
+  top: 50px;
+  /* position: absolute; */
+  /* position: static; */
+  /* position: sticky; */
 }
