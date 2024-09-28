@@ -1,0 +1,78 @@
+:root {
+  /* Ve cambiando el valor de abajo por 10deg..80deg */
+  /* --angulo: 90deg; */
+  /* Sustituye el valor por 0.5 */
+  --transparencia: 0.5;
+}
+#contenedor {
+  /* Cambia la perspectiva por "none", "1000px", "100px"... */
+  perspective: 300px;
+  transform: rotateY(30deg)
+}
+.cara {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+#frente {
+  background: rgb(224, 22, 112, var(--transparencia));
+  translate: 50px 50px;
+  /* transform: translateZ(50px); */
+}
+#derecha {
+  background: rgb(20, 217, 196, var(--transparencia));
+  /* transform: translateX(50px) rotateY(var(--angulo)); */
+  translate: 160px 50px;
+}
+#arriba {
+  background: rgb(132, 49, 141, var(--transparencia));
+  /* transform: translateY(-50px) rotateX(var(--angulo)); */
+  translate: 50px -60px;
+}
+#abajo {
+  background: #ffff00;
+  /* transform: translateY(50px) rotateX(var(--angulo)) rotateX(var(--angulo)) rotateX(var(--angulo)); */
+  color: rgb(0, 0, 0, 0.2);
+  z-index: -3;
+  translate: 50px 160px;
+}
+#izquierda {
+  background: #14d9c4;
+  /* transform:  translateX(-50px) rotateY(var(--angulo)) rotateY(var(--angulo)) rotateY(var(--angulo)); */
+  color: rgb(0, 0, 0, 0.2);
+  z-index: -3;
+  translate: -60px 50px;
+}
+#trasera {
+  background: rgb(0, 255, 255, 0.2);
+  color: rgb(0, 0, 0, 0.2);
+  transform: /*translateZ(-50px)*/ rotateY(var(--angulo)) rotateY(var(--angulo)); 
+  z-index: -3
+}
+.eje {
+  border-top: #4a86e8 solid;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 160px;
+  text-align: right;
+  color: #4a86e8;
+  z-index: -5;
+  transform-origin: top left;
+}
+#x {
+  transform: translateZ(-50px);
+}
+#y {
+  transform: translateZ(-50px) rotateZ(-90deg);
+}
+#z {
+  transform: translateZ(-50px) rotateY(-90deg);
+}
