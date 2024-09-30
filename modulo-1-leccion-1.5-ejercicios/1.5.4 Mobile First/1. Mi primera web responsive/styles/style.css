@@ -1,6 +1,7 @@
 body {
   background-color: white;
   margin: 0 15px;
+  background-color: rgb(198, 188, 188);
 }
 
 .header {
@@ -20,10 +21,6 @@ body {
 }
 .main p {
   margin-top: 10px;
-}
-
-.contenedor {
-  background-color: grey;
 }
 
 .related {
