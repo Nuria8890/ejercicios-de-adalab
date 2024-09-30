@@ -27,13 +27,13 @@ body {
 }
 
 .box--2 {
-  scale: 1.5;
+  transform: scale(1.5);
 }
 
 .box--3 {
-  rotate: 60deg;
+  transform: rotate(60deg);
 }
 
 .box--4 {
-  transform: translate(20px) scale(1.5) rotate(60deg);
+  transform: translateY(20px) scale(1.5) rotate(60deg);
 }
