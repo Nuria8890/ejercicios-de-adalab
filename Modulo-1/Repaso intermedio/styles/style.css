@@ -26,8 +26,6 @@
 }
 
 .footer {
-  background-color: lightslategray;
-
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -37,14 +35,29 @@
   align-items: center;
 }
 
+.red-line {
+  background-color: var(--color);
+  width: 100vw;
+  height: 3px;
+}
+
 .R-footer {
   background-color: var(--color);
   border-radius: 50%;
+  padding: 3%;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: var(--font);
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 600;
   font-style: normal;
+  font-size: 150%;
+  color: white;
 }
 
 .copyright {
@@ -54,4 +67,7 @@
   font-family: var(--font);
   font-optical-sizing: var(--font-optical-sizing);
   font-style: var(--font-style);
+  font-size: 110%;
+
+  margin:15px 0;
 }
