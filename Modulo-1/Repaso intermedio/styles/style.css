@@ -36,14 +36,6 @@
   align-items: center;
 }
 
-.line-R {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  position: relative;
-}
-
 .red-line {
   background-color: var(--color);
   width: 100vw;
