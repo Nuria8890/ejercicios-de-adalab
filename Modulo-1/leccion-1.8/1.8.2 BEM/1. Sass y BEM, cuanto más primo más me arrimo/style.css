@@ -1,0 +1,18 @@
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.card:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.card--dark {
+  background-color: #000;
+  color: #fff;
+}
+.card--light {
+  background-color: #fff;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+$color: #010101;
+$font-size: 18px;
+$wrapper-margin: 0 60px;
+$background-header-footer: yellow;
+$background-main: cyan;
+$height-header-footer: 50px;
+
+body {
+  color: $color; /* Pasar a variable */
+  display: flex;
+  font-size: $font-size;
+  font-style: arial, sans-serif;/* pasar a dos variables: texto y tamaño de texto */
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: 0 40px;
+}
+.header {
+  background: $background-header-footer; /* Pasar a variable */
+  height: $height-header-footer; /* Pasar a variable */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.main {
+  background: $background-main; /* Pasar a variable */
+  flex: 1;
+}
+.main__title {
+  color: #fff;
+  font-size: 2.5em;
+}
+.main__content p {
+  font-size: 1.1em;
+  line-height: 140%;
+}
+.footer {
+  background: $background-header-footer; /* Pasar a variable */
+  height: $height-header-footer; /* Pasar a variable */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
