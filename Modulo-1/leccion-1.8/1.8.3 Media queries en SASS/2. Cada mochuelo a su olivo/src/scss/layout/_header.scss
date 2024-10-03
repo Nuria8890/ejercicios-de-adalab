@@ -1,5 +1,13 @@
 .page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  background-color: blue;
+  color: white;
+  height: 75px;
+  @media all and (min-width: 768px) {
+    background-color: pink;
+    height: 100px;
+  }
+  @media (min-width: 1280px) {
+    background-color: green;
+    height: 100px;
+  }
 }
