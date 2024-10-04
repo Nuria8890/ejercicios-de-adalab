@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.rejilla {
+  height: 90vh;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item1 {
+  background-color: pink;
+  height: 20vh;
+  grid-column: span 12;
+}
+
+.item2 {
+  background-color: purple;
+  grid-column: span 5;
+  height: 60vh;
+}
+
+.item3 {
+  background-color: brown;
+  grid-column: span 7;
+  height: 60vh;
+}
+
+.item4 {
+  background-color: lightskyblue;
+  height: 20vh;
+  grid-column: span 12;
+}
