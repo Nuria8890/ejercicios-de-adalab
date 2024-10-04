@@ -1,0 +1,43 @@
+.contenedor__rejilla{
+  display: flex;
+  justify-content: center;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: 100px 150px;
+  grid-template-rows: 50px 100px 150px;
+  grid-template-areas: 'header header' 'main aside' 'footer footer';
+}
+
+.item{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__1 {
+  background-color: aqua;
+  grid-area: main;
+}
+
+.item__2 {
+  background-color: lightcoral;
+}
+
+.item__3 {
+  background-color:aquamarine;
+}
+
+.item__4 {
+  background-color: lightseagreen;
+}
+
+.item__5 {
+  background-color: lightyellow;
+}
+
+.item__6 {
+  background-color: pink;
+}
