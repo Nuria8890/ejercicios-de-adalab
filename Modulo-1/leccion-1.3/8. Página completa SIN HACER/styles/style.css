@@ -7,7 +7,7 @@
   background-color: black;
   color: wheat;
   width: 100vw;
-  height: 50px;
+  height: 5vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -35,7 +35,6 @@ main {
 }
 
 .pagina {
-  background-color: blueviolet;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -44,21 +43,36 @@ main {
 }
 
 .autor-fecha {
-  background-color: rgb(0, 255, 47);
   width: var(--max-width-pantalla);
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
 
-.titulo-parrafo {
-  background-color: brown;
-  
-}
-
 h2 {
   padding: 10px 0;
 }
-p {
+.parrafo { 
   padding-top: 10px;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.footer {
+  width: var(--max-width-pantalla);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-lista {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
 }
