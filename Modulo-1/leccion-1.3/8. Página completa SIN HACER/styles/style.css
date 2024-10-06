@@ -1,0 +1,23 @@
+.cabecera {
+  background-color: black;
+  color: wheat;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cabecera-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contenedor-nav-lista {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
