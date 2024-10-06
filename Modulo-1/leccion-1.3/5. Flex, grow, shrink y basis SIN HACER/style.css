@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura de la ventana */
+}
+
+.header {
+  background-color: red;
+}
+
+.main {
+  background-color: lightskyblue;
+  flex: 1;
+}
+
+.footer {
+  background-color: green;
+}
