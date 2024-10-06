@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  max-width: 960px;
+  width: 100%;
+}
+
+.header {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.bloqueCentral {
+  display: flex;
+}
+
+.bloqueCentral__aside1 {
+  background-color: yellow;
+  padding: 10px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.bloqueCentral__article {
+  background-color: lightblue;
+  padding: 20px;
+  width: 50%;
+  justify-content: center;
+}
+
+.bloqueCentral__aside2 {
+  background-color: pink;
+  padding: 10px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}

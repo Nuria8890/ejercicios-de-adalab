@@ -1,7 +1,42 @@
-<!-- Convierte la imagen anterior en código usando HTML y CSS con lo que has aprendido hoy de flexbox. Los requisitos son los siguientes:
+<!-- Convierte la imagen en código usando HTML y CSS con lo que has aprendido hoy de flexbox. Los requisitos son los siguientes:
 
 Las medidas tienen que ser relativas, es decir, los elementos de la página deben adaptarse al ancho de la ventana del navegador web. Si el tamaño de la ventana aumenta, el tamaño de los elementos debe aumentar.
 
 El ancho del conjunto entero debe ser del 100% con un ancho máximo de 960px.
 
 Cada bloque debe crearse con una etiqueta HTML5 (header, footer, aside...) y debe tener un título que esté centrado (como aparece en la imagen). El bloque central (que sería un artículo), en vez de tener un título, tendrá un párrafo con un texto aleatorio; puedes escribir dentro de él lo que quieras. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear página con flexbox</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <header class="header">
+      <h1 class="header__title">Header</h1>
+    </header>
+
+    <div class="bloqueCentral">
+      <aside class="bloqueCentral__aside1">
+        <h3>Aside 1</h3>
+      </aside>
+      <article class="bloqueCentral__article">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempore cupiditate atque error vel eos laudantium dolorem illo odit, corporis reiciendis ea. Hic impedit deleniti fugit aliquid suscipit maxime accusamus.</p>
+      </article>
+      <aside class="bloqueCentral__aside2">
+        <h3>Aside 2</h3>
+      </aside>
+    </div> 
+    
+    <footer class="footer">
+      <h2>Footer</h2>
+    </footer>   
+  </div>
+
+
+</body>
+</html>
