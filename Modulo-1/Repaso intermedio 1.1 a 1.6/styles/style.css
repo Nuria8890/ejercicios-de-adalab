@@ -5,16 +5,22 @@
   --font-style: normal;
 }
 
+.contenedor {
+  min-width: 320px;
+  height: 100vh;
+}
+
 .main {
   background-color: antiquewhite;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   
   color: var(--color);
   font-family: var(--font);
   font-optical-sizing: var(--font-optical-sizing);
   font-weight: 800;
   font-style: var(--font-style);
-  font-size: 350%;
+  font-size: 35px;
 
   display: flex;
   flex-direction: column;
@@ -57,7 +63,7 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 150%;
+  font-size: 15px;
   color: white;
 }
 
@@ -68,7 +74,7 @@
   font-family: var(--font);
   font-optical-sizing: var(--font-optical-sizing);
   font-style: var(--font-style);
-  font-size: 110%;
+  font-size: 11px;
 
   margin-top: 35px;
 }
