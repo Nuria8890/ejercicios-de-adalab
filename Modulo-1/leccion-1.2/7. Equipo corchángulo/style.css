@@ -33,7 +33,7 @@ body {
   /* DESCOMENTAR LA SIGUIENTE LINEA
    * Y OBSERVAR QUE PASA
    **/
-  /*text-align: center;*/
+  /* text-align: center; */
 }
 
 .user-info * {
@@ -58,12 +58,12 @@ body {
    * Y OBSERVAR QUE PASA
    **/
   
-  /*overflow-x: scroll;*/
+  /* overflow-x: scroll; */
   
   /* DESCOMENTAR LAS SIGUIENTES LINEAS
    * Y OBSERVAR QUE PASA
    **/
   
-  /*overflow: hidden;
-  text-overflow: ellipsis;*/
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
 }
