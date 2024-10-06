@@ -29,7 +29,7 @@
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
 }
@@ -48,4 +48,17 @@ main {
   width: var(--max-width-pantalla);
   display: flex;
   justify-content: space-between;
+  margin: 10px;
+}
+
+.titulo-parrafo {
+  background-color: brown;
+  
+}
+
+h2 {
+  padding: 10px 0;
+}
+p {
+  padding-top: 10px;
 }
