@@ -1,3 +1,8 @@
+:root {
+  --width-pantalla: 100%;
+  --max-width-pantalla: 600px;
+}
+
 .cabecera {
   background-color: black;
   color: wheat;
@@ -12,12 +17,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 600px;
+  width: var(--width-pantalla);
+  max-width: var(--max-width-pantalla);
 }
 
 .contenedor-nav-lista {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+}
+
+main {
+  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.pagina {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  width: var(--width-pantalla);
+  max-width: var(--max-width-pantalla);
+}
+
+.autor-fecha {
+
+  display: flex;
+  justify-content: space-between;
 }
