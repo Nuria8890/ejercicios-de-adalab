@@ -32,6 +32,7 @@ Botón de enviar -->
     id="firstName"
     name="firstName"
     required
+    pattern="[A-Za-z]+"
     />
 
     <label for="lastName">Apellido</label>
@@ -40,6 +41,7 @@ Botón de enviar -->
     placeholder="Ej: Pérez"
     id="lastName"
     name="lastName"
+    pattern="[A-Za-z]+" 
     />
 
     <label for="emailAddress">Correo electrónico</label>
@@ -48,6 +50,7 @@ Botón de enviar -->
     id="emailAddress"
     name="email"
     required
+    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
     >
 
     <label for="calle">Calle</label>
@@ -95,6 +98,7 @@ Botón de enviar -->
     id="dni"
     name="dni"
     required
+    pattern="^\d{8}[A-Za-z]$"
     >
 
     <label for="telefono">Telefono</label>
@@ -104,6 +108,7 @@ Botón de enviar -->
     id="telefono"
     name="telefono"
     required
+    pattern="^(\+?\d{1,3}[- ]?)?$?\d{1,4}?$?[- ]?\d{1,4}[- ]?\d{1,9}$"  
     >
 
     <label for="pasword">Contraseña</label>
