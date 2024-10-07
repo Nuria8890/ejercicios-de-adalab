@@ -1,0 +1,116 @@
+<!-- Vamos a practicar con nuestro primer formulario. En primer lugar, maquetar una página web con un formulario con los siguientes campos (de distintos tipos, para practicarlos todos):
+
+Nombre
+Apellido
+Correo electrónico
+Calle
+Ciudad
+Provincia
+País
+DNI
+Teléfono
+Contraseña
+Confirmar contraseña
+Botón de enviar -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<form action="https://dev.adalab.es/api/form" method="GET">
+
+    <label for="firstName">Nombre</label>
+    <input
+    type="text"
+    placeholder="Ej: Antonia"
+    id="firstName"
+    name="firstName"
+    />
+
+    <label for="lastName">Apellido</label>
+    <input 
+    type="text"
+    placeholder="Ej: Pérez"
+    id="lastName"
+    name="lastName"
+    />
+
+    <label for="emailAddress">Correo electrónico</label>
+    <input type="email"
+    placeholder="Ej: antonia-perez@gmail.com"
+    id="emailAddress"
+    name="email"
+    >
+
+    <label for="calle">Calle</label>
+    <input
+    type="text"
+    placeholder="Amapola 37 4ºC"
+    id="calle"
+    name="calle"
+    >
+
+    <label for="ciudad">Ciudad</label>
+    <input
+    type="text"
+    placeholder="Madrid"
+    id="ciudad"
+    name="ciudad"
+    >
+
+    <label for="provincia">Provincia</label>
+    <input
+    type="text"
+    placeholder="Madrid"
+    id="provincia"
+    name="provincia"
+    >
+
+    <label for="pais">Pais</label>
+    <input
+    type="text"
+    placeholder="España"
+    id="pais"
+    name="pais"
+    >
+
+    <label for="dni">DNI</label>
+    <input
+    type="text"
+    placeholder="12345678-A"
+    id="dni"
+    name="dni"
+    >
+
+    <label for="telefono">Telefono</label>
+    <input
+    type="tel"
+    placeholder="606123456"
+    id="telefono"
+    name="telefono"
+    >
+
+    <label for="pasword">Contraseña</label>
+    <input
+    type="password"
+    id="pasword"
+    name="pasword"
+    >
+
+    <label for="pasword-confirm">Confirma contraseña</label>
+    <input
+    type="password"
+    id="pasword-confirm"
+    name="pasword-confirm"
+    >
+
+    <input class="button" type="submit" value="Enviar"/>
+</form>
+</body>
+</html>
