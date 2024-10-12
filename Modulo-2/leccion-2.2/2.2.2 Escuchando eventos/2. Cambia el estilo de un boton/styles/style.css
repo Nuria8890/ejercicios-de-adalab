@@ -1,0 +1,26 @@
+.btn {
+  margin: 20px;
+  padding: 5px;
+}
+
+.btn-guay {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: aquamarine;
+  color: rgb(18, 112, 80);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.btn-out {
+  margin: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(18, 112, 80);
+  color: aquamarine;
+  font-weight: 800;
+  font-size: 20px;
+}
