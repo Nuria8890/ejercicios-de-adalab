@@ -4,13 +4,9 @@ const title = document.querySelector('.title');
 
 const selectAdalaber1 = document.querySelector('.adalaber-1');
 
-title.innerHTML = title.innerHTML + selectAdalaber1.innerHTML;
+let selectAdalaber2 = document.querySelector('.adalaber-2');
 
 
-// Una vez hecho esto, cambia el código para que el nombre sea el del segundo li
+// Al cambiar selectAdalaber1 por selectAdalaber2 se cambia el nombre
 
-
-// let selectAdalaber2 = document.querySelector('.adalaber-2');
-
-
-// title.innerHTML = title.innerHTML + selectAdalaber2.innerHTML;
+title.innerHTML = title.innerHTML + selectAdalaber2.innerHTML;
