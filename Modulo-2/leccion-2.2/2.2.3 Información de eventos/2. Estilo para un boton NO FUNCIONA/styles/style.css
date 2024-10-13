@@ -1,0 +1,12 @@
+.btn {
+  margin: 10px;
+  padding: 5px;
+}
+
+.btn-click {
+  border-radius: 5px;
+  background-color: aqua;
+  color: rgb(66, 165, 165);
+  font-weight: 600;
+  border: none;
+}
