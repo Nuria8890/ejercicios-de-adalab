@@ -25,3 +25,19 @@ btn2.addEventListener("click", () => {
 //   const btnClick = event.currentTarget;
 //   btnClick.classList.toggle('btn-click');
 // })
+
+
+
+// CÉSAR: Así sí funciona.
+// const btn = document.querySelectorAll('.btn');
+// console.log(btn)
+
+// btn.forEach(function (item) {
+//   item.addEventListener("click", (event) => {
+//     console.log('hago click');
+  
+//     const btnClick = event.currentTarget;
+//     btnClick.classList.toggle('btn-click');
+//   })
+// });
+

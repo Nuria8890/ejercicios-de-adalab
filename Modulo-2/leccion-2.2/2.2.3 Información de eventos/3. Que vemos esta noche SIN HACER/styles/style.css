@@ -1,0 +1,21 @@
+.btn {
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.list {
+  margin: 10px;
+}
+
+.list li {
+  padding: 3px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.paragraph {
+  margin: 10px;
+  font-size: 20px;
+  color: blue;
+}
