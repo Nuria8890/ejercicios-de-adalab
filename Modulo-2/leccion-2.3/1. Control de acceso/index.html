@@ -1,0 +1,32 @@
+<!-- 
+Crea un programa de control de acceso al sistema que solo permita el acceso a las usuarias Maria y Luisa.
+
+Para ello crea una variable que almacene uno de los nombres.
+
+*También puedes crear un input para que la usuaria introduzca el nombre y obtener el nombre del value.
+
+Posteriormente, si el nombre es María o Luisa muestra el mensaje "Bienvenida, (el nombre aquí)".
+
+Si el nombre es diferente deberá mostrar "Lo siento pero el usuario que has introducido no está registrado".
+
+Nota: cambia el valor de la variable y comprueba que todo funciona como esperas.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de acceso</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <label for="userName" class="label">Introduzca el nombre de usuario: </label>
+  <input type="text" id="userName" class="input js-name">
+  <button class="btn js-btn">Enviar</button>
+  <p class="paragraph js-paragraph"></p>
+
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
