@@ -15,8 +15,14 @@ const p = document.querySelector('.js-paragraph');
 // Cuando hago click en el botón, añade a list todos los <li>
 btn.addEventListener("click", () => {
   console.log("Hago click");
-  list.innerHTML = `<li class="movie-1">${inception}</li> <li class="movie-2">${theButterFlyEffect}</li> <li class="movie-3">${eternalSunshineOfTheSM}</li> <li class="movie-4">${blueVelvet}</li> <li class="movie-5">${split}</li>`;
-  
+  list.innerHTML = `<li class="movie-1">${inception}</li>
+    <li class="movie-2">${theButterFlyEffect}</li>
+    <li class="movie-3">${eternalSunshineOfTheSM}</li>
+    <li class="movie-4">${blueVelvet}</li>
+    <li class="movie-5">${split}</li>`;
+
+/*
+Demasiado código...
   const movie1 = document.querySelector('.movie-1');
   const movie2 = document.querySelector('.movie-2');
   const movie3 = document.querySelector('.movie-3');
@@ -44,6 +50,14 @@ btn.addEventListener("click", () => {
     console.log("Hago click en ", event.currentTarget.innerHTML);
     p.innerHTML = `Has seleccionado la película ${event.currentTarget.innerHTML}`;
   });
+*/
 });
 
+list.addEventListener("click", (event) => {
+  console.log(event.currentTarget); // el elemento que estoy escuchando, es decir, <ul>
+  console.log(event.target); // el elemento en sí en el que hago click, es decir, cada uno de los <li>
+
+  const nameFilm = event.target.innerHTML;
+  p.innerHTML = `Has seleccionado la película ${nameFilm}`; 
+});
 
