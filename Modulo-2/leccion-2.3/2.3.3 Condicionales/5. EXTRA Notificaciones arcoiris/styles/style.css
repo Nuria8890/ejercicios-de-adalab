@@ -1,0 +1,20 @@
+.success {
+  border: 3px solid darkgreen;
+  background-color: lightgreen;
+  width: 50%;
+  text-align: center;
+}
+
+.error {
+  border: 3px solid darkred;
+  background-color: red;
+  width: 50%;
+  text-align: center;
+}
+
+.warning {
+  border: 3px solid yellow;
+  background-color: lightgoldenrodyellow;
+  width: 50%;
+  text-align: center;
+}
