@@ -20,7 +20,8 @@
 // const btn = document.querySelector('.js-btn');
 
 // btn.addEventListener("click", (event) => {
-//   console.log('hago click');
+//   console.log('hago click en event.target', event.target);
+//   console.log('hago click en event.currentTarget', event.currentTarget);
 
 //   const btnClick = event.target;
 //   btnClick.classList.toggle('btn-click');
