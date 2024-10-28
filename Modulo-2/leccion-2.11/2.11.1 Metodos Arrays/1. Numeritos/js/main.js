@@ -8,4 +8,11 @@ const get100Numbers = () => {
   }
 };
 get100Numbers();
-console.log(array);
+console.log('Función get100Numbers', array);
+
+
+const getReversed100Numbers = (parameter) => {
+  array.reverse();
+}
+getReversed100Numbers(get100Numbers());
+console.log('función getReversed100Numbers', array);
