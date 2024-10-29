@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%; 
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+
+/* Para que los input de los formularios, cuando están en column, no ocupen 100vw
+input {
+  align-self: self-start;
+} */
+
+  /* Para que el recuadro de textarea se ponga debajo de su título
+  .comments {
+    display: block;
+  } */
