@@ -1,0 +1,26 @@
+<!-- Crea una aplicación que me genere un número aleatorio entero utilizando el API 'rand.fun'.
+
+Obtén el número aleatorio haciendo una petición a la siguiente URL https://api.rand.fun/number/integer
+
+Añade parámetros a la URL del tipo clave=valor, siempre después de character ? y separados por &, por ejemplo si quisieras pedir un integer entre diferentes valores, la url quedaría así https://api.rand.fun/number/integer?min=0&max=10000 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Generar número aleatorio</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <button class="js-getRandomNumber">Click para generar un número aleatorio</button>
+  <div>
+    Soy el número aleatorio: 
+    <p class="js-randomNumber"></p>
+  </div>
+
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
