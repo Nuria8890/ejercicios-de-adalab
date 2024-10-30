@@ -1,0 +1,29 @@
+body {
+  margin: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.div-img {
+  width: 200px;
+  border: 2px solid black;
+}
+
+img {
+  width: 100%;
+}

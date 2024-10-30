@@ -1,0 +1,41 @@
+<!--
+Ahora vamos a explorar un nuevo API: el API de usuarios de GitHub. La URL de este API es https://api.github.com/users/{username}, donde {username} es el nombre del usuario en GitHub. Por ejemplo, aquí tenéis la URL para obtener información del usuario de Isra https://api.github.com/users/gootyfer. Si ponéis esta URL en una nueva pestaña del navegador podréis observar qué datos nos devuelve el API.
+
+Vamos a crear una página en la que haya un input de texto y un botón de buscar. El usuario escribirá en el input un nombre de usuario de GitHub. Prepararemos una función que se ejecute cuando se pulse el botón buscar y que contenga una petición al API para obtener información de ese usuario y así mostrarla en nuestra página:
+
+nombre
+
+número de repositorios
+
+avatar (imagen)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API de usuarios de GitHub</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <form action="">
+    <label for="user">Busca un usuario de GitHub</label>
+    <input type="text" id="user" class="js-input">
+    <button class="js-button">Buscar</button>
+
+    <div class="container">
+      <h4>Nombre:</h4>
+      <p class="js-name"></p>
+      <h4>Número de repositorios:</h4>
+      <p class="js-repos"></p>
+      <h4>Avatar:</h4>
+      <div class="div-img">
+        <img class="js-img" src="" alt="">
+      </div>
+    </div>
+  </form>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
