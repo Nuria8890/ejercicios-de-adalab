@@ -11,15 +11,22 @@ const form = document.querySelector(".js-form");
 const collectValues = () => {
   const nombre = inputName.value;
   const apellido = inputLastName.value;
+
+  return { nombre, apellido };
+};
+
+const paintValues = (name, lastName) => {
+  paragraph.innerHTML = `El nombre de la usuaria es ${name} y el apellido es ${lastName}`;
 };
 
 const handleKeyUp = () => {
   // Recojo los valores de los inputs
-  collectValues();
+  const valores = collectValues();
+  const nombre = valores.nombre;
+  const apellido = valores.apellido;
 
   // Pinto los valores de los inputs en el párrafo
-  paragraph.innerHTML = `El nombre de la usuaria es ${nombre} y el apellido es ${apellido}`;
-
+  paintValues(nombre, apellido);
   // Guardo los valores en localStorage
   localStorage.setItem("nombre", nombre);
   localStorage.setItem("apellido", apellido);
