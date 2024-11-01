@@ -19,6 +19,11 @@ const paintValues = (name, lastName) => {
   paragraph.innerHTML = `El nombre de la usuaria es ${name} y el apellido es ${lastName}`;
 };
 
+const saveInLocalStorage = (name, lastName) => {
+  localStorage.setItem("nombre", name);
+  localStorage.setItem("apellido", lastName);
+};
+
 const handleKeyUp = () => {
   // Recojo los valores de los inputs
   const valores = collectValues();
@@ -27,11 +32,9 @@ const handleKeyUp = () => {
 
   // Pinto los valores de los inputs en el párrafo
   paintValues(nombre, apellido);
-  // Guardo los valores en localStorage
-  localStorage.setItem("nombre", nombre);
-  localStorage.setItem("apellido", apellido);
 
-  // return { nombre, apellido };
+  // Guardo los valores en localStorage
+  saveInLocalStorage(nombre, apellido);
 };
 
 form.addEventListener("keyup", handleKeyUp);
