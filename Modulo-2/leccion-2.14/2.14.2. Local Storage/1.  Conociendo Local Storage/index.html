@@ -1,0 +1,39 @@
+<!--
+Escribir datos en formularios es muy tedioso para los usuarios. ¡Vamos a cachearlos para facilitarles la vida!
+
+Prepara un input de texto para el nombre, un input de texto para los apellidos y un párrafo vacío
+
+Cada vez que la usuaria escriba su nombre y apellidos (keyUp) tenemos que pintar el valor en el párrafo y guardarlo en localStorage.
+
+Al recargar la página tenemos que consultar localStorage y, si hay algún nombre guardado, rellenar el input y el párrafo.
+
+Mejora la forma de guardar los datos, queremos tener nuestros datos agrupaditos. El reto es guardar y recoger del localStorage un objeto con dos propiedades, nombre y apellido.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conociendo Local Storage</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <form action="" class="js-form">
+      <label for="name">Nombre:</label>
+      <input class="js-inputName" type="text" name="name" id="name" />
+
+      <label for="lastName">Apellido</label>
+      <input
+        class="js-inputLastName"
+        type="text"
+        name="lastName"
+        id="lastName"
+      />
+    </form>
+
+    <p class="js-paragraph"></p>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
