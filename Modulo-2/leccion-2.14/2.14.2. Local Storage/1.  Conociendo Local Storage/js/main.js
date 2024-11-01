@@ -44,10 +44,9 @@ const handleKeyUp = () => {
 
 form.addEventListener("keyup", handleKeyUp);
 
-const datosLocalStorage = {
-  nombre: localStorage.getItem("nombre"),
-  apellido: localStorage.getItem("apellido"),
-};
+const datosSacados = localStorage.getItem("nombreyapellido");
+
+const datosLocalStorage = JSON.parse(datosSacados);
 
 if (datosLocalStorage.nombre !== null && datosLocalStorage.apellido !== null) {
   paragraph.innerHTML = `El nombre de la usuaria es ${datosLocalStorage.nombre} y el apellido es ${datosLocalStorage.apellido}`;
