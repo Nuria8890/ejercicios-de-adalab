@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorar el API Star Wars</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <p>
+      Vamos a explorar un API abierto de información sobre el mundo Star Wars.
+      En esta página tenemos la documentación completa del API y un formulario
+      que nos permite hacer peticiones a la URL que indiquemos. Identifica la
+      siguiente información sobre SWAPI:
+    </p>
+    <h4>la URL base del API</h4>
+    <p>https://swapi.py4e.com/</p>
+
+    <h4>si necesita autenticación</h4>
+    <p>Creo que no... es pública</p>
+
+    <h4>método HTTP que deben usar las peticiones a este API</h4>
+    <p>GET, porque quiero consultar datos que tiene</p>
+
+    <h4>URL para acceder a la info del personaje "Luke Skywalker"</h4>
+    <p>https://swapi.py4e.com/api/people/1/</p>
+
+    <h4>URL para acceder a la info de la película "A New Hope"</h4>
+    <p>https://swapi.py4e.com/api/films/1/</p>
+
+    <h4>
+      A qué otros recursos puedo acceder desde el API además de personajes y
+      pelis
+    </h4>
+    <ul>
+      <li>"people": "https://swapi.py4e.com/api/people/"</li>
+      <li>"planets": "https://swapi.py4e.com/api/planets/"</li>
+      <li>"films": "https://swapi.py4e.com/api/films/"</li>
+      <li>"species": "https://swapi.py4e.com/api/species/"</li>
+      <li>vehicles": "https://swapi.py4e.com/api/vehicles/"</li>
+      <li>"starships": "https://swapi.py4e.com/api/starships/"</li>
+    </ul>
+
+    <h4>URL para acceder al listado de personajes, ¿está paginada?</h4>
+    <p>
+      Sí, si está paginada, si quieres acceder al resto de personajes tienes que
+      ir cambiando el número de página
+      (https://swapi.py4e.com/api/people/?page=3)
+    </p>
+
+    <h4>cómo puedo buscar personajes mediante la URL</h4>
+    <p>
+      Cambiando el número de la persona: "https://swapi.py4e.com/api/people/11/"
+    </p>
+    <h4>
+      cómo puedo hacer que el JSON de una petición se me devuelva traducido a
+      Wookiee
+    </h4>
+    <p>
+      Poniendo al final de la petición ?format=wookiee:
+      "https://swapi.py4e.com/api/people/11/?format=wookiee"
+    </p>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
