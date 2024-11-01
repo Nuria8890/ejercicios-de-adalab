@@ -47,10 +47,13 @@ form.addEventListener("keyup", handleKeyUp);
 const datosSacados = localStorage.getItem("nombreyapellido");
 
 const datosLocalStorage = JSON.parse(datosSacados);
+console.log(datosLocalStorage);
 
-if (datosLocalStorage.nombre !== null && datosLocalStorage.apellido !== null) {
+if (datosLocalStorage !== null) {
   paragraph.innerHTML = `El nombre de la usuaria es ${datosLocalStorage.nombre} y el apellido es ${datosLocalStorage.apellido}`;
 
   inputName.value = datosLocalStorage.nombre;
   inputLastName.value = datosLocalStorage.apellido;
+} else {
+  paragraph.innerHTML = "Escribe un nombre y apellido";
 }
