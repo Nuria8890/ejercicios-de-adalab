@@ -8,8 +8,6 @@ const inputLastName = document.querySelector(".js-inputLastName");
 
 const form = document.querySelector(".js-form");
 
-console.log("hola");
-
 const handleKeyUp = () => {
   // Recojo los valores de los inputs
   const nombre = inputName.value;
@@ -24,7 +22,21 @@ const handleKeyUp = () => {
   // Guardo los valores en localStorage
   localStorage.setItem("nombre", nombre);
   localStorage.setItem("apellido", apellido);
+
+  return { nombre, apellido };
 };
 
 form.addEventListener("keyup", handleKeyUp);
-console.log("adios");
+
+if (
+  localStorage.getItem("nombre") !== null &&
+  localStorage.getItem("apellido") !== null
+) {
+  const nombre = localStorage.getItem("nombre");
+  const apellido = localStorage.getItem("apellido");
+
+  paragraph.innerHTML = `El nombre de la usuaria es ${nombre} y el apellido es ${apellido}`;
+
+  inputName.value = nombre;
+  inputLastName.value = apellido;
+}
