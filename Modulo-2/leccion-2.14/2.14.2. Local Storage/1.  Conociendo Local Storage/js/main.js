@@ -39,12 +39,14 @@ const handleKeyUp = () => {
 
 form.addEventListener("keyup", handleKeyUp);
 
-const nombreGuardado = localStorage.getItem("nombre");
-const apellidoGuardado = localStorage.getItem("apellido");
+const datosLocalStorage = {
+  nombre: localStorage.getItem("nombre"),
+  apellido: localStorage.getItem("apellido"),
+};
 
-if (nombreGuardado !== null && apellidoGuardado !== null) {
-  paragraph.innerHTML = `El nombre de la usuaria es ${nombreGuardado} y el apellido es ${apellidoGuardado}`;
+if (datosLocalStorage.nombre !== null && datosLocalStorage.apellido !== null) {
+  paragraph.innerHTML = `El nombre de la usuaria es ${datosLocalStorage.nombre} y el apellido es ${datosLocalStorage.apellido}`;
 
-  inputName.value = nombreGuardado;
-  inputLastName.value = apellidoGuardado;
+  inputName.value = datosLocalStorage.nombre;
+  inputLastName.value = datosLocalStorage.apellido;
 }
