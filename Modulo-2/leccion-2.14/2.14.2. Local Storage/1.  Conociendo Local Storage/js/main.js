@@ -11,10 +11,7 @@ const form = document.querySelector(".js-form");
 const handleKeyUp = () => {
   // Recojo los valores de los inputs
   const nombre = inputName.value;
-  // console.log("nombre es:", nombre);
-
   const apellido = inputLastName.value;
-  // console.log("apellido es:", apellido);
 
   // Pinto los valores de los inputs en el párrafo
   paragraph.innerHTML = `El nombre de la usuaria es ${nombre} y el apellido es ${apellido}`;
@@ -23,20 +20,17 @@ const handleKeyUp = () => {
   localStorage.setItem("nombre", nombre);
   localStorage.setItem("apellido", apellido);
 
-  return { nombre, apellido };
+  // return { nombre, apellido };
 };
 
 form.addEventListener("keyup", handleKeyUp);
 
-if (
-  localStorage.getItem("nombre") !== null &&
-  localStorage.getItem("apellido") !== null
-) {
-  const nombre = localStorage.getItem("nombre");
-  const apellido = localStorage.getItem("apellido");
+const nombreGuardado = localStorage.getItem("nombre");
+const apellidoGuardado = localStorage.getItem("apellido");
 
-  paragraph.innerHTML = `El nombre de la usuaria es ${nombre} y el apellido es ${apellido}`;
+if (nombreGuardado !== null && apellidoGuardado !== null) {
+  paragraph.innerHTML = `El nombre de la usuaria es ${nombreGuardado} y el apellido es ${apellidoGuardado}`;
 
-  inputName.value = nombre;
-  inputLastName.value = apellido;
+  inputName.value = nombreGuardado;
+  inputLastName.value = apellidoGuardado;
 }
