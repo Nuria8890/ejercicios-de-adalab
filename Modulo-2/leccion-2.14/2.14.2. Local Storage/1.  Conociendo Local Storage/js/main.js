@@ -8,10 +8,14 @@ const inputLastName = document.querySelector(".js-inputLastName");
 
 const form = document.querySelector(".js-form");
 
-const handleKeyUp = () => {
-  // Recojo los valores de los inputs
+const collectValues = () => {
   const nombre = inputName.value;
   const apellido = inputLastName.value;
+};
+
+const handleKeyUp = () => {
+  // Recojo los valores de los inputs
+  collectValues();
 
   // Pinto los valores de los inputs en el párrafo
   paragraph.innerHTML = `El nombre de la usuaria es ${nombre} y el apellido es ${apellido}`;
