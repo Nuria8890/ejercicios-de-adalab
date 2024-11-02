@@ -11,11 +11,21 @@
 const formulario = document.querySelector(".js-form");
 const paginaCompleta = document.querySelector(".js-main");
 
+const getTheme = localStorage.getItem("tema");
+
+if (getTheme === "claro") {
+  paginaCompleta.classList.add("fondoClaro");
+  paginaCompleta.classList.remove("fondoOscuro");
+} else if (getTheme === "oscuro") {
+  paginaCompleta.classList.remove("fondoClaro");
+  paginaCompleta.classList.add("fondoOscuro");
+}
+
 const changeTheme = (event) => {
   if (event.target.value === "claro") {
     paginaCompleta.classList.add("fondoClaro");
     paginaCompleta.classList.remove("fondoOscuro");
-  } else {
+  } else if (event.target.value === "oscuro") {
     paginaCompleta.classList.remove("fondoClaro");
     paginaCompleta.classList.add("fondoOscuro");
   }
@@ -23,9 +33,8 @@ const changeTheme = (event) => {
   return event.target.value;
 };
 
-const saveTheme = (selectedTheme) => {
+const saveTheme = (selectedTheme) =>
   localStorage.setItem("tema", selectedTheme);
-};
 
 const handleChange = (event) => {
   const selectedTheme = changeTheme(event);
