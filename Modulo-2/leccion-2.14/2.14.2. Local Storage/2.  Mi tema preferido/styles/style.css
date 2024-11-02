@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.fondoClaro {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.fondoOscuro {
+  background-color: darkblue;
+  color: lightblue;
+}
