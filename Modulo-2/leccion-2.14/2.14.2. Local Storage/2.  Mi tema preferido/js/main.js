@@ -19,10 +19,17 @@ const changeTheme = (event) => {
     paginaCompleta.classList.remove("fondoClaro");
     paginaCompleta.classList.add("fondoOscuro");
   }
+
+  return event.target.value;
+};
+
+const saveTheme = (selectedTheme) => {
+  localStorage.setItem("tema", selectedTheme);
 };
 
 const handleChange = (event) => {
-  changeTheme(event);
+  const selectedTheme = changeTheme(event);
+  saveTheme(selectedTheme);
 };
 
 formulario.addEventListener("change", handleChange);
