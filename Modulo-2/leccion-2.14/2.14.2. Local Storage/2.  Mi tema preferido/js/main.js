@@ -11,34 +11,27 @@
 const formulario = document.querySelector(".js-form");
 const paginaCompleta = document.querySelector(".js-main");
 
-const getTheme = localStorage.getItem("tema");
-
-if (getTheme === "claro") {
-  paginaCompleta.classList.add("fondoClaro");
-  paginaCompleta.classList.remove("fondoOscuro");
-} else if (getTheme === "oscuro") {
-  paginaCompleta.classList.remove("fondoClaro");
-  paginaCompleta.classList.add("fondoOscuro");
-}
-
-const changeTheme = (event) => {
-  if (event.target.value === "claro") {
+const changeTheme = (theme) => {
+  if (theme === "claro") {
     paginaCompleta.classList.add("fondoClaro");
     paginaCompleta.classList.remove("fondoOscuro");
-  } else if (event.target.value === "oscuro") {
+  } else if (theme === "oscuro") {
     paginaCompleta.classList.remove("fondoClaro");
     paginaCompleta.classList.add("fondoOscuro");
   }
-
-  return event.target.value;
 };
 
-const saveTheme = (selectedTheme) =>
-  localStorage.setItem("tema", selectedTheme);
+const saveTheme = (theme) => localStorage.setItem("tema", theme);
 
 const handleChange = (event) => {
-  const selectedTheme = changeTheme(event);
+  const selectedTheme = event.target.value;
+
+  changeTheme(selectedTheme);
   saveTheme(selectedTheme);
 };
 
 formulario.addEventListener("change", handleChange);
+
+const getTheme = localStorage.getItem("tema");
+
+changeTheme(getTheme);
