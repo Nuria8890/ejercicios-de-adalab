@@ -32,6 +32,7 @@ const handleChange = (event) => {
   for (const item of items) {
     item.remove();
   }
+  items = [];
 
   const city = event.target.value;
   for (const image of cities[city]) {
