@@ -1,0 +1,30 @@
+<!-- Crea una página que contenga tres imágenes, usando un select de formulario pregúntale a la usuaria qué ciudad quiere visitar.
+
+Si la usuaria elige Madrid, haz que en cada imagen se muestre una foto de Madrid
+
+Haz lo mismo para París y Nueva York
+
+Nota: Usa imágenes que encuentres por Internet. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De viaje</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <form action="">
+      <select name="city" id="city" class="js-select">
+        <option value="">Selecciona una ciudad</option>
+        <option value="madrid">Madrid</option>
+        <option value="paris">Paris</option>
+        <option value="nuevaYork">Nueva York</option>
+      </select>
+    </form>
+    <div class="js-images"></div>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
