@@ -1,0 +1,36 @@
+<!--
+Vamos a crear nuestro propio autocompletado de formularios. Para ello vamos a crear un formulario con tres campos:
+
+Nombre
+
+Apellidos
+
+Teléfono
+
+Por otro lado, en JavaScript tendremos un array de 3 objetos con esa estructura. Es decir, un listado 3 objetos, cada uno con nombre apellidos y teléfono. Pediremos a la usuaria que elija uno de esos 3 con un select con el nombre. Al seleccionarlo se rellenará el formulario automáticamente.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autocompletado</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <select name="selector" class="js-selector" id="">
+      <option value="">Selecciona un nombre</option>
+    </select>
+    <form action="">
+      <label for="name">Nombre</label>
+      <input type="text" name="datos" id="name" class="js-inputNombre" />
+      <label for="apellido">Apellido</label>
+      <input type="text" name="datos" id="apellido" class="js-inputApellido" />
+      <label for="telefono">Teléfono</label>
+      <input type="text" name="datos" id="telefono" class="js-inputTlefono" />
+    </form>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

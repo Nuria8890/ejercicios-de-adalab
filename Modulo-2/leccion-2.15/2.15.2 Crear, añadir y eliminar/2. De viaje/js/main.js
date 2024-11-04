@@ -21,11 +21,6 @@ const cities = {
   ],
 };
 
-// const madridImg = [
-//   "https://www.barcelo.com/guia-turismo/wp-content/uploads/que-visitar-en-madrid.jpg",
-//   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Palacio_de_Comunicaciones_-_07.jpg/640px-Palacio_de_Comunicaciones_-_07.jpg",
-//   "https://www.civitatis.com/f/pseo/espana/madrid/puerta-alcala-madrid-1200.jpg",
-// ];
 let items = [];
 
 const handleChange = (event) => {
