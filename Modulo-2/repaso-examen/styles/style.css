@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 20px;
+}
+
 .div__palettes {
   display: flex;
   flex-direction: column;

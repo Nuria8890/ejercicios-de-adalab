@@ -1,6 +1,8 @@
 "use strict";
 
 const section = document.querySelector(".js-section");
+let palettes = [];
+const input = document.querySelector(".js-input");
 
 // Ejercicio 1: Pintar una paleta pidiendo datos al servidor:
 /* 
@@ -48,8 +50,9 @@ fetch(
 )
   .then((response) => response.json())
   .then((data) => {
-    const palettes = data.palettes;
+    palettes = data.palettes;
     renderPalettes(palettes);
+    console.log("palettes es", palettes);
 
     // Ejercicio 3: añadir una clase específica a las paletas favoritas
     const palettesSelected = document.querySelectorAll(".js-palette");
@@ -63,3 +66,17 @@ const handleFavorite = (event) => {
   const paletteClicked = event.currentTarget;
   paletteClicked.classList.toggle("palette__favorite");
 };
+
+// Ejercicio 4: filtar paleta por nombre de nave
+const handleFilter = () => {
+  const inputValue = input.value;
+  section.innerHTML = "";
+  for (const palette of palettes) {
+    const paletteName = palette.name;
+    if (paletteName.includes(inputValue)) {
+      renderPalettes([palette]);
+    }
+  }
+};
+
+input.addEventListener("input", handleFilter);
