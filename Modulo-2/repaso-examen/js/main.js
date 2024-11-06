@@ -45,23 +45,14 @@ const renderPalettes = (palettes) => {
   }
 };
 
-fetch(
-  "https://beta.adalab.es/ejercicios-de-los-materiales/js-ejercicio-de-paletas/data/palettes.json"
-)
-  .then((response) => response.json())
-  .then((data) => {
-    palettes = data.palettes;
-    renderPalettes(palettes);
-    console.log("palettes es", palettes);
-
-    // Ejercicio 3: añadir una clase específica a las paletas favoritas
-    const palettesSelected = document.querySelectorAll(".js-palette");
-    for (const paletteSelected of palettesSelected) {
-      paletteSelected.addEventListener("click", handleFavorite);
-    }
-  });
-
 // Ejercicio 3: añadir una clase específica a las paletas favoritas
+
+const addClassFavoritePallete = () => {
+  const palettesSelected = document.querySelectorAll(".js-palette");
+  for (const paletteSelected of palettesSelected) {
+    paletteSelected.addEventListener("click", handleFavorite);
+  }
+};
 const handleFavorite = (event) => {
   const paletteClicked = event.currentTarget;
   paletteClicked.classList.toggle("palette__favorite");
@@ -75,12 +66,31 @@ const handleFilter = () => {
     palette.name.toLowerCase().includes(inputValue.toLowerCase())
   );
   renderPalettes(palettesFiltered);
-  // for (const palette of palettes) {
-  //   const paletteName = palette.name;
-  //   if (paletteName.includes(inputValue)) {
-  //     renderPalettes([palette]);
-  //   }
-  // }
 };
 
 input.addEventListener("input", handleFilter);
+
+// Ejercicio 5: localStorage
+const localStoragePalettes = JSON.parse(localStorage.getItem("paletas"));
+
+if (localStoragePalettes !== null) {
+  palettes = localStoragePalettes;
+  renderPalettes(palettes);
+  // Ejercicio 3: añadir una clase específica a las paletas favoritas
+  addClassFavoritePallete();
+} else {
+  fetch(
+    "https://beta.adalab.es/ejercicios-de-los-materiales/js-ejercicio-de-paletas/data/palettes.json"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      palettes = data.palettes;
+      renderPalettes(palettes);
+
+      // Ejercicio 5: localStorage
+      localStorage.setItem("paletas", JSON.stringify(palettes));
+
+      // Ejercicio 3: añadir una clase específica a las paletas favoritas
+      addClassFavoritePallete();
+    });
+}
