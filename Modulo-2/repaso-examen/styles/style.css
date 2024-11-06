@@ -1,3 +1,10 @@
+.div__palettes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
 .palette {
   display: flex;
   justify-content: space-around;
