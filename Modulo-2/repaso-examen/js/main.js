@@ -1,4 +1,5 @@
 "use strict";
+
 const section = document.querySelector(".js-section");
 
 // Ejercicio 1: Pintar una paleta pidiendo datos al servidor:
@@ -30,7 +31,7 @@ const renderPalettes = (palettes) => {
   for (const palette of palettes) {
     const colorArray = palette.colors;
 
-    let content = `<div class="div__palettes"><h4>${palette.name}</h4> <div class="palette">`;
+    let content = `<div class="div__palettes"><h4>${palette.name}</h4> <div class="palette js-palette">`;
 
     for (const color of colorArray) {
       content += ` 
@@ -49,4 +50,16 @@ fetch(
   .then((data) => {
     const palettes = data.palettes;
     renderPalettes(palettes);
+
+    // Ejercicio 3: añadir una clase específica a las paletas favoritas
+    const palettesSelected = document.querySelectorAll(".js-palette");
+    for (const paletteSelected of palettesSelected) {
+      paletteSelected.addEventListener("click", handleFavorite);
+    }
   });
+
+// Ejercicio 3: añadir una clase específica a las paletas favoritas
+const handleFavorite = (event) => {
+  const paletteClicked = event.currentTarget;
+  paletteClicked.classList.toggle("palette__favorite");
+};
