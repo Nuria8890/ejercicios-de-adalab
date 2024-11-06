@@ -71,12 +71,16 @@ const handleFavorite = (event) => {
 const handleFilter = () => {
   const inputValue = input.value;
   section.innerHTML = "";
-  for (const palette of palettes) {
-    const paletteName = palette.name;
-    if (paletteName.includes(inputValue)) {
-      renderPalettes([palette]);
-    }
-  }
+  const palettesFiltered = palettes.filter((palette) =>
+    palette.name.toLowerCase().includes(inputValue.toLowerCase())
+  );
+  renderPalettes(palettesFiltered);
+  // for (const palette of palettes) {
+  //   const paletteName = palette.name;
+  //   if (paletteName.includes(inputValue)) {
+  //     renderPalettes([palette]);
+  //   }
+  // }
 };
 
 input.addEventListener("input", handleFilter);
