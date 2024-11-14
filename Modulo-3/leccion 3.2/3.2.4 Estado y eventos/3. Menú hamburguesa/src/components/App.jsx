@@ -3,13 +3,13 @@ import iconoAdalab from "../images/logoAdalab.png";
 import { useState } from "react";
 
 function App() {
-  const [openClose, setOpenClose] = useState("collapse");
+  const [open, setOpen] = useState(false);
 
   const handleOpenClose = () => {
-    if (openClose === "collapse") {
-      setOpenClose("");
+    if (open === false) {
+      setOpen(true);
     } else {
-      setOpenClose("collapse");
+      setOpen(false);
     }
   };
 
@@ -21,16 +21,18 @@ function App() {
         className="icono"
         onClick={handleOpenClose}
       />
-      <div className={openClose}>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-          <li>Item 5</li>
-        </ul>
-        <button onClick={handleOpenClose}>Close</button>
-      </div>
+      {open && (
+        <div>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+          </ul>
+          <button onClick={handleOpenClose}>Close</button>
+        </div>
+      )}
     </>
   );
 }
