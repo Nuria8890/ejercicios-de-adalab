@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
 function InputGroupText(props) {
-  const handleOnChange = (event) => {
-    props.handleChange(event);
+  const handleInputChange = (event) => {
+    props.handleChange(event.target.value);
   };
   return (
     <>
@@ -17,7 +17,7 @@ function InputGroupText(props) {
           id={props.inputId}
           placeholder={props.inputPlaceholder}
           value={props.inputValue}
-          onChange={handleOnChange}
+          onChange={handleInputChange}
         />
       </div>
     </>

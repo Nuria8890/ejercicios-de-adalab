@@ -13,8 +13,8 @@ const App = () => {
   const [legalTerms, setLegalTerms] = useState(false);
 
   // Eventos
-  const handleName = (ev) => {
-    setName(ev.target.value);
+  const handleName = (value) => {
+    setName(value);
   };
 
   const handleEmail = (ev) => {
