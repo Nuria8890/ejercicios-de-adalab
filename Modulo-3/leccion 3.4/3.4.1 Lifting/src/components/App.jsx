@@ -13,13 +13,6 @@ const App = () => {
   const [legalTerms, setLegalTerms] = useState(false);
 
   // Eventos
-  const handleName = (value) => {
-    setName(value);
-  };
-
-  const handleEmail = (value) => {
-    setEmail(value);
-  };
 
   // const handleRegion = (ev) => {
   //   setRegion(ev.target.value);
@@ -67,8 +60,8 @@ const App = () => {
     <div>
       <Form
         handleonSubmitForm={handleForm}
-        handleChangeName={handleName}
-        handleChangeEmail={handleEmail}
+        setName={setName}
+        setEmail={setEmail}
         inputValueName={name}
         inputValueEmail={email}
       />

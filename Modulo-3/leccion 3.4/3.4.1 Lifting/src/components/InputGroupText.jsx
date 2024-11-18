@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function InputGroupText(props) {
   const handleInputChange = (event) => {
-    props.handleChange(event.target.value);
+    props.onChange(event.target.value);
   };
   return (
     <>
@@ -32,5 +32,5 @@ InputGroupText.propTypes = {
   inputId: PropTypes.string.isRequired,
   inputPlaceholder: PropTypes.string.isRequired,
   inputValue: PropTypes.string.isRequired,
-  handleChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };

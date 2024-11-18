@@ -14,7 +14,7 @@ function Form(props) {
           inputId={"name"}
           inputPlaceholder={"María García"}
           inputValue={props.inputValueName}
-          handleChange={(value) => props.handleChangeName(value)}
+          onChange={props.setName}
         />
 
         {/* email */}
@@ -24,7 +24,7 @@ function Form(props) {
           inputId={"email"}
           inputPlaceholder={"mariagarcia@gmail.com"}
           inputValue={props.inputValueEmail}
-          handleChange={(value) => props.handleChangeEmail(value)}
+          onChange={props.setEmail}
         />
         {/*
          region 
@@ -133,8 +133,8 @@ export default Form;
 
 Form.propTypes = {
   handleonSubmitForm: PropTypes.func.isRequired,
-  handleChangeName: PropTypes.func.isRequired,
-  handleChangeEmail: PropTypes.func.isRequired,
+  setName: PropTypes.func.isRequired,
+  setEmail: PropTypes.func.isRequired,
   inputValueName: PropTypes.string.isRequired,
   inputValueEmail: PropTypes.string.isRequired,
 };
