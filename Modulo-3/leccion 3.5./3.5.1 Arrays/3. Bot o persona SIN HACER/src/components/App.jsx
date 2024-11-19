@@ -1,8 +1,43 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "../styles/App.scss";
 
 function App() {
-  // const [checked, setChecked] = useState("");
+  const inputs = [
+    { ingredient: "macarrones", checked: false },
+    { ingredient: "patatas", checked: false },
+    { ingredient: "nueces", checked: false },
+    { ingredient: "huevos", checked: false },
+    { ingredient: "cebolla", checked: false },
+    { ingredient: "cerveza", checked: false },
+  ];
+
+  const [clicked, setClicked] = useState("");
+
+  const handleChecked = (event) => {
+    console.log("click", event.target.checked);
+    // if(event.target.checked) {
+    //   "Eres una persona concebollista"
+    // } else {
+    //   "Eres un robot sin paladar".
+    // }
+  };
+
+  const renderInputs = () => {
+    const ingredients = inputs.map((ingredient, i) => {
+      return (
+        <label key={i}>
+          <input
+            onClick={handleChecked}
+            id={i}
+            type="checkbox"
+            name="tortilla"
+          />
+          {ingredient.ingredient}
+        </label>
+      );
+    });
+    return ingredients;
+  };
 
   return (
     <>
@@ -12,35 +47,7 @@ function App() {
         </h1>
       </header>
       <form action="" className="form">
-        <label>
-          <input type="checkbox" name="tortilla" />
-          macarrones
-        </label>
-
-        <label>
-          <input type="checkbox" name="tortilla" />
-          patatas
-        </label>
-
-        <label>
-          <input type="checkbox" name="tortilla" />
-          nueces
-        </label>
-
-        <label>
-          <input type="checkbox" name="tortilla" />
-          huevos
-        </label>
-
-        <label>
-          <input type="checkbox" name="tortilla" />
-          cebolla
-        </label>
-
-        <label>
-          <input type="checkbox" name="tortilla" />
-          cerveza
-        </label>
+        {renderInputs()}
       </form>
     </>
   );
