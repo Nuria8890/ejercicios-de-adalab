@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-:root {
-  margin-left: 20px;
-}
-
 ul {
   list-style: none;
 }
@@ -19,6 +15,7 @@ a {
 
 button {
   border: none;
+  width: fit-content;
   cursor: pointer;
 }
 
@@ -27,6 +24,10 @@ fieldset {
 }
 
 input {
+  align-self: self-start;
+}
+
+label {
   align-self: self-start;
 }
 
