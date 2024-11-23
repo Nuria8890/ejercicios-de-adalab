@@ -1,19 +1,33 @@
 import "../styles/App.scss";
 import callToApi from "../services/api";
 import { useState, useEffect } from "react";
+import Form from "./Form";
 
 function App() {
   // Estados
 
-  const [variable, setVariable] = useState("");
+  const [searchSerie, setSearchSerie] = useState("");
 
-  useEffect(() => {
-    callToApi().then((response) => {
-      setVariable(response);
-    });
-  }, []); // Array vacío porque quiero que llame a la API solo una vez
+  // Código JS
 
-  return <>{/* código HTML */}</>;
+  const changeSerie = (value) => {
+    setSearchSerie(value);
+  };
+
+  // useEffect(() => {
+  //   callToApi().then((response) => {
+  //     setSearchSerie(response);
+  //   });
+  // }, [searchSerie]);
+
+  return (
+    <>
+      <main>
+        <Form searchSerie={searchSerie} onChangeSerie={changeSerie} />
+        <p>Estás buscando la serie: {searchSerie}</p>
+      </main>
+    </>
+  );
 }
 
 export default App;

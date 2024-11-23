@@ -1,9 +1,9 @@
 const callToApi = () => {
-  return fetch() // url de la api
+  return fetch(`https://api.tvmaze.com/search/shows?q=${searchSerie}`)
     .then((response) => response.json())
     .then((data) => {
       const result = () => {
-        // código
+        console.log("data", data);
       };
       return result;
     });
