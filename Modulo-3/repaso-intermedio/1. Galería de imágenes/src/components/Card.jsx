@@ -2,7 +2,6 @@ import "../styles/layout/Card.scss";
 import PropTypes from "prop-types";
 
 function Card({ flowerToPaint }) {
-  console.log(flowerToPaint);
   return (
     <li className="flower-card">
       <h4>{flowerToPaint.nombre}</h4>
