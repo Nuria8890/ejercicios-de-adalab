@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "URL": "https://es.wikipedia.org/wiki/Rosa",
+    "nombre": "Rosa",
+    "foto": "https://www.purplant.es/wp-content/uploads/2024/04/rosal-rosa-1024x1024.jpg",
+    "descripcion": "Las rosas son flores muy apreciadas por su belleza y fragancia. Existen muchas variedades y colores."
+  },
+  {
+    "id": 2,
+    "URL": "https://es.wikipedia.org/wiki/Suculenta",
+    "nombre": "Suculenta",
+    "foto": "https://sevilla.abc.es/estilo/bulevarsur//wp-content/uploads/sites/14/2022/08/plantas-suculentas-de-interior-por-que-son-las-favoritas-de-quienes-no-tienen-mano-con-la-jardineria-e1661115435543.jpeg",
+    "descripcion": "Las suculentas son plantas que almacenan agua en sus hojas, tallos o raíces, lo que les permite sobrevivir en climas áridos."
+  },
+  {
+    "id": 3,
+    "URL": "https://es.wikipedia.org/wiki/Cactus",
+    "nombre": "Cactus",
+    "foto": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/04/30/626d75b87376c.jpeg",
+    "descripcion": "Los cactus son plantas adaptadas a ambientes desérticos, caracterizadas por sus espinas y su capacidad para almacenar agua."
+  },
+  {
+    "id": 4,
+    "URL": "https://es.wikipedia.org/wiki/Girasol",
+    "nombre": "Girasol",
+    "foto": "https://www.muyinteresante.com/wp-content/uploads/sites/5/2022/10/13/6347b346f1983.jpeg?resize=1024,768",
+    "descripcion": "El girasol es una planta conocida por su gran flor amarilla que sigue la trayectoria del sol durante el día."
+  },
+  {
+    "id": 5,
+    "URL": "https://es.wikipedia.org/wiki/Lirio",
+    "nombre": "Lirio",
+    "foto": "https://www.floristeriamorris.com/wp-content/uploads/el-significado-del-lirio-te-sorprendera-descubrelo.jpg",
+    "descripcion": "Los lirios son plantas con flores grandes y vistosas, que suelen crecer en climas templados y son populares en jardines."
+  }
+]

@@ -1,0 +1,15 @@
+.flower-card {
+  width: 250px;
+  border: black 1px solid;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: 200px;
+  }
+  a {
+    color: blue;
+  }
+}
