@@ -20,7 +20,7 @@ function Form({ searchSerie, onChangeSerie }) {
 
 export default Form;
 
-Form.prototype = {
+Form.propTypes = {
   searchSerie: PropTypes.string.isRequired,
   onChangeSerie: PropTypes.func.isRequired,
 };
