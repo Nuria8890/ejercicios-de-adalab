@@ -47,7 +47,7 @@ function App() {
       );
     });
 
-    return <ol className="listOl">{list}</ol>;
+    return <ol className="list__ol">{list}</ol>;
   };
 
   const addNewTask = () => {
