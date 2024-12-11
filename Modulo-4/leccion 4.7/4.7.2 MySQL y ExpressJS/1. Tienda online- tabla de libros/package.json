@@ -1,0 +1,17 @@
+{
+  "name": "bbdd-starter-kit",
+  "version": "1.0.0",
+  "description": "Servidor básico con Express JS",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Nuria CD",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.11.5"
+  }
+}
