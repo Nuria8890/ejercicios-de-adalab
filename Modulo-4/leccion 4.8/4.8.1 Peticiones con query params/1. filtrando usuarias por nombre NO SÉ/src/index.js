@@ -1,5 +1,5 @@
-const express = require('express');
-const cors = require('cors');
+const express = require("express");
+const cors = require("cors");
 
 // create server
 const server = express();
@@ -15,7 +15,7 @@ server.listen(serverPort, () => {
 });
 
 // static server
-const staticServerPath = './public';
+const staticServerPath = "./public";
 server.use(express.static(staticServerPath));
 
 // users
@@ -24,24 +24,26 @@ const users = []; // fake users data base
 
 // api endpoints
 
-server.post('/user', (req, res) => {
-  console.log('Query params:', req.query);
-  console.log('Query param userName:', req.query.userName);
-  console.log('Query param userEmail:', req.query.userEmail);
+server.post("/user", (req, res) => {
+  console.log("Query params:", req.query);
+  console.log("Query param userName:", req.query.userName);
+  console.log("Query param userEmail:", req.query.userEmail);
 
   // add new user to dababase
   users.push({
     name: req.query.userName,
-    email: req.query.userEmail
+    email: req.query.userEmail,
   });
 
   res.json({
-    result: 'User created'
+    result: "User created",
   });
 });
 
-server.get('/users', (req, res) => {
+server.get("/users", (req, res) => {
+  const filterByName = req.query.filterByName;
+  const filtered = users.filter((user) => user.name === filterByName);
   res.json({
-    result: users
+    result: filtered,
   });
 });

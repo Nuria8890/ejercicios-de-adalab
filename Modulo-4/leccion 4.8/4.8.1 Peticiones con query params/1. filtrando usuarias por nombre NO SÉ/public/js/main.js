@@ -20,32 +20,17 @@ document
   });
 
 // get users data
+// filterByName
+const inputFilterByName = document.querySelector(".js-input-filterByName");
 
 document.querySelector(".js-btn-get-users").addEventListener("click", () => {
-  fetch("http://localhost:3000/users")
+  fetch(`http://localhost:3000/users?filterByName=${inputFilterByName.value}`)
     .then((response) => response.json())
     .then((responseData) => {
       console.log("Server response:", responseData);
       printJson(".js-get-users-result", responseData);
     });
 });
-
-/*// filterByName
-const inputFilterByName = document.querySelector(".js-input-filterByName");
-
-const handleChangeInputFilterByName = () => {
-  const queryParams = `?filterByName=${inputFilterByName.value}`;
-  console.log("el nombre filtrado es", queryParams);
-
-  fetch("http://localhost3000/users")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("el dato filtrado es", data);
-    });
-};
-
-inputFilterByName.addEventListener("change", handleChangeInputFilterByName);
-*/
 
 // helper
 
