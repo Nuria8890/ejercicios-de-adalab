@@ -1,0 +1,19 @@
+[
+  {
+    "nombre": "Ava DuVernay",
+    "edad": 49,
+    "nacionalidad": "Estadounidense",
+    "peliculas": ["Selma", "A Wrinkle in Time", "13th"],
+    "premios": ["Directora del Año en los Premios de la Crítica", "Premio Emmy"]
+  },
+  {
+    "nombre": "Chloé Zhao",
+    "edad": 39,
+    "nacionalidad": "China",
+    "peliculas": ["Nomadland", "The Rider", "Songs My Brothers Taught Me"],
+    "premios": [
+      "Premio de la Academia a la Mejor Directora",
+      "Premio BAFTA a la Mejor Dirección"
+    ]
+  }
+]
